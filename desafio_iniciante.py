@@ -9,10 +9,11 @@ driver = webdriver.Chrome()
 
 driver.get('https://curso-web-scraping.pages.dev/#/desafio/1')
 
+# leitura do arquivo json
 with open('desafio_1.json') as file:
     usuarios = json.load(file)
 
-# fechar sidebar
+# fecha sidebar
 sidebar = driver.find_element(By.CSS_SELECTOR, '[data-drawer-target="default-sidebar"]')
 sidebar.click()
 
