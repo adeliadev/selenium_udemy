@@ -9,12 +9,14 @@ driver = webdriver.Chrome()
 driver.get("http://localhost:8000/#/exemplo/8")
 
 driver.implicitly_wait(time_to_wait=10)
+
 # seleciona a tabela
 tabela = driver.find_element(By.ID, 'tabela-usuarios')
 # seleciona as linhas da tabela
 linhas = tabela.find_elements(By.CSS_SELECTOR, 'tbody tr')
 from dataclasses import dataclass
 
+# cria classe usuário
 @dataclass
 class Usuario:
     avatar: str
@@ -23,6 +25,7 @@ class Usuario:
     email: str
     perfil: str
     estado: str
+
 registros = []
 
 for linha in linhas:
@@ -38,6 +41,7 @@ for linha in linhas:
     )
 
     registros.append(registro)
+    
 proximo = driver.find_element(By.XPATH, '//main//button[contains(text(), "Próxima")]')
 
 def raspar_dados_da_tabela():

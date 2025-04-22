@@ -1,16 +1,15 @@
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 
 driver.get("http://localhost:8000/#/exemplo/6")
 
 driver.implicitly_wait(time_to_wait=10)
+
 # seleciona div e para obter suas propriedades
 estados = driver.find_element(By.ID, 'estados')
+
 ## ATRIBUTOS
 estados.get_attribute('class')
 estados.get_attribute('id')
@@ -30,11 +29,12 @@ for child in children:
         # o que for div terá tab e -
         if cc.tag_name == 'div':
             print('\t -', cc.text)
-# dataset serve para todas as propriedades que começam com data-
+
+# dataset serve para todas as propriedades que começam com "data-"
 estados.get_property('dataset')['country']
 # retorna todo o html do elemento selecionado
 estados.get_property('outerHTML')
-### size, location, rect, value of css
+# tamanho do componente
 estados.size
 # localização do componente na página
 estados.location

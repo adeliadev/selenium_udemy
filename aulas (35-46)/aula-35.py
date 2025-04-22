@@ -1,14 +1,14 @@
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 
 driver.get("http://localhost:8000/#/exemplo/4")
+
 driver.refresh()
 driver.find_element(By.ID, 'vantagens')
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 driver.refresh()
 # instância do wait, os argumentos sao o driver e o tempo de espera

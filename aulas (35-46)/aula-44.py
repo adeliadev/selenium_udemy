@@ -36,10 +36,9 @@ driver.get("http://localhost:8000/#/exemplo/5")
 driver.find_element(By.CSS_SELECTOR, 'main button.btn-primary').click()
 
 # alerta do navegador
-
 alerta = driver.switch_to.alert
-
 alerta.text
+
 # para cancelar e aceitar no alert
 alerta.dismiss()
 alerta.accept()
