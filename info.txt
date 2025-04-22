@@ -1,0 +1,3 @@
+Para rodar o projeto (terminal da IDE):
+- python -m http.server -d dist/
+- http://localhost:8000
