@@ -1,6 +1,0 @@
-Comando para iniciar:
-- python -m http.server -d dist/ 
-- localhost:8000
-
-Link remoto:
-- curso-web-scraping.pages.dev
