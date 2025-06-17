@@ -4,19 +4,19 @@ Este repositório contém o conteúdo completo do curso de Selenium + Python par
 ## 🛠️Estrutura do Repositório
 O repositório é organizado da seguinte forma:
 
-aulas (17-30): Pastas com código e anotações das aulas de 17 a 30.
+- aulas (17-30): Pastas com código e anotações das aulas de 17 a 30.
 
-aulas (35-46): Pastas com código e anotações das aulas de 35 a 46.
+- aulas (35-46): Pastas com código e anotações das aulas de 35 a 46.
 
-desafios: Desafios práticos para aplicar o conhecimento adquirido no curso.
+- desafios: Desafios práticos para aplicar o conhecimento adquirido no curso.
 
-dist: Arquivos de distribuição ou artefatos gerados durante o curso.
+- dist: Arquivos de distribuição ou artefatos gerados durante o curso.
 
-venv: Ambiente virtual utilizado para gerenciar as dependências do projeto.
+- venv: Ambiente virtual utilizado para gerenciar as dependências do projeto.
 
-aula.ipynb: Jupyter Notebook com exemplos de código e explicações.
+- aula.ipynb: Jupyter Notebook com exemplos de código e explicações.
 
-info.txt: Informações adicionais sobre o curso e as configurações do ambiente.
+- info.txt: Informações adicionais sobre o curso e as configurações do ambiente.
 
 ## ▶️ Como rodar o código:
 - Python 3.6.x ou superior
@@ -26,16 +26,15 @@ python -m venv venv
 ```
 - Ative o ambiente virtual:
 ```
+# windows
 venv\Scripts\activate
 ```
 ```
+# linux/MacOS
 source venv/bin/activate
 ```
-
-## 📝 Instale as Dependências:
-
-- Com o ambiente ativado, instale as dependências do projeto com o comando:
+- Com o ambiente ativado, as instruções para rodar o projeto se encontram em:
 ```
-pip install -r requirements.txt
+info.txt
 
 ```
